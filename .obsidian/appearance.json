@@ -1,3 +1,11 @@
 {
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "accentColor": "#f5995c",
+  "interfaceFontFamily": "Arial",
+  "baseFontSize": 14,
+  "nativeMenus": true,
+  "textFontFamily": "Arial",
+  "enabledCssSnippets": [
+    "custom"
+  ]
 }
