@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "index"
             }
           }
         ]
@@ -168,8 +168,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fc1643f7d1fd9d4d",
+  "active": "f942b3f99b538c2f",
   "lastOpenFiles": [
-    "README.md"
+    "README.md",
+    "index.md",
+    "test.json",
+    "HEllo.md"
   ]
 }
