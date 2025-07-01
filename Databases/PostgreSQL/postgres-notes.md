@@ -16,7 +16,8 @@
     * a web server that accesses the database  
     * a specialized db maintenance tool.  
 * The client and server can be on different hosts.  
-* In this case, they communicate over TCP/IP.  
+* In this case, they communicate over TCP/IP.
+* If they are on the same host, they might communicate over unix domain sockets.
 * The postgres server can handle concurrent connections.  
 * It does this by forking a new process for each connection.  
 * The forked (child) process is responsible for the connection for its entire lifetime.  
@@ -52,6 +53,14 @@ $ dropdb mydb
 	- Running the Postgres terminal program, called `psql`
 	- Usie a graphical frontend (admin tool)
 	- Write a custom application using language bindings
-- You can 
-
+- Use [[psql]] to connect to the database. Let's say we're connecting to `mydb`. Then 
+```bash
+psql mydb
+```
+- If the prompt ends with `>` (resp. `#`), you are a database (resp. super)user.
+	- Being a superuser means you are not subject to access controls.
+- Some commands:
+	- `\h [commands]` -- SQL help
+	- `\q` -- exit psql
+- 
 [^1]:  It felt weird to me that there are wrappers for functionality programmable through sql. I think the reason these wrappers exist is to adhere to the unix philosophy, and allow tasks to be performed by system administrators utilizing scripts and through interactive sessions.

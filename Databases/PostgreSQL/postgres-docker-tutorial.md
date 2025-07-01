@@ -42,7 +42,11 @@ psql -U postgres
 -- This just ensures we don't enter a mode which requires user interaction, which would break our script.
 -- In psql, some commands are as follows:
 \? -- show help on backslash commands; I recommend skimming the output to see what commansd are available.
-
--- 
+\conninfo -- gives useful connection info
+-- Notice that the database name is also postgres. This is because once the (database) 
+-- user name is determined, if the database name is not specified, it defaults to that user -- name.
+-- If you're running psql inside the docker instance, you will also see that the connection 
+-- is "via socket"; that means that in this case docker is using Unix domain sockets 
+-- instead of TCP/IP for interprocess communication.
 
 ```
